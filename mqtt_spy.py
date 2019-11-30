@@ -11,5 +11,5 @@ def on_message(client, userdata, msg):
 client = mqtt.Client(client_id = "s4p0")
 client.on_connect = on_connect
 client.on_message = on_message
-client.connect('167.71.210.68', 1883, 60)
+client.connect('ip_dir', 1883, 60)
 client.loop_forever()
